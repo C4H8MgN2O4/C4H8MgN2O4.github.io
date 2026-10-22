@@ -18,7 +18,7 @@ function myFunction() {
 
 const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
 const toggle = document.querySelector("#theme-toggle");
-let manuallyToggled = false;
+let manuallyToggled = true;
 
 function applyTheme(isDark) {
   document.documentElement.classList.toggle("dark", isDark);
@@ -34,3 +34,4 @@ toggle.addEventListener("click", () => {
   manuallyToggled = true;
   applyTheme(!document.documentElement.classList.contains("dark"));
 });
+
