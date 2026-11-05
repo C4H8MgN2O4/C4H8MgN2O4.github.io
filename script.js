@@ -9,7 +9,13 @@ function myFunction() {
     x.className = "topnav";
   }
 } 
+//from W3Schools
+const copyright = document.getElementById("copyright");
 
+if (copyright) {
+  copyright.textContent = String(new Date().getFullYear());
+}
+//mixture of AI (ChatGPT) and Copyright Notice Generator
 
 // Keep this only if it's for opening/closing your navigation menu.
 function myFunction() {
